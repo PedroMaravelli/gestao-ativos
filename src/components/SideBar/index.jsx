@@ -1,15 +1,31 @@
+import { useState } from "react";
 import { Container } from "./styles";
 
-import { ArrowLeft } from "lucide-react";
 
-export function SideBar({title, rota}) {
+
+export function SideBar() {
+     const [isOpen, setIsOpen] = useState(false);
     return(
-        <Container>
+        <Container  
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+            isOpen={isOpen}>
+
+             {isOpen && <div>
+                    <a href="/software">
+                    
+                    <strong>Software</strong>
+                </a >
+                <a href="/rede">
+                    
+                    <strong>Redes</strong>
+                </a >
+                <a href="/hardware">
+                    
+                    <strong>Hardware</strong>
+                </a >
+                </div>}
             
-            <a href={rota}>
-                <ArrowLeft /> 
-                <strong>{title}</strong>
-            </a >
         </Container>
     )
 }

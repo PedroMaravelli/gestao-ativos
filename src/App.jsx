@@ -1,17 +1,8 @@
-
-
-import './App.css'
-import { Routers } from './routes/routers'
+import React from 'react';
+import { Routers } from './routes/Routers'; // ajuste o caminho se necessário
 
 function App() {
-  
-
-  return (
-    <>
-      <Routers/>
-        
-    </>
-  )
+  return <Routers />;
 }
 
-export default App
+export default App;
