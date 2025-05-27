@@ -15,6 +15,6 @@ export const getHardware = () => api.get("/hardware");
 export const getSoftware = () => api.get("/software");
 
 // Função para buscar todas as redes
-export const getRede = () => api.get("/rede");
+export const getRede = () => api.get("/redes");
 
 export default api;

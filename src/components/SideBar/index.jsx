@@ -3,6 +3,7 @@ import { Container } from "./styles";
 
 
 
+
 export function SideBar() {
      const [isOpen, setIsOpen] = useState(false);
     return(
@@ -12,15 +13,15 @@ export function SideBar() {
             isOpen={isOpen}>
 
              {isOpen && <div>
-                    <a href="/software">
+                    <a href="/ativos/software">
                     
                     <strong>Software</strong>
                 </a >
-                <a href="/rede">
+                <a href="/ativos/redes">
                     
                     <strong>Redes</strong>
                 </a >
-                <a href="/hardware">
+                <a href="/ativos/hardware">
                     
                     <strong>Hardware</strong>
                 </a >

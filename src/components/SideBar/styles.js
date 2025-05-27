@@ -4,7 +4,7 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 15vw;        /* 15% da largura da viewport */
+    width: 15vw;        
     height: 100vh;
     width: ${props => (props.isOpen ? "15vw" : "50px")};
     transition: width 0.3s ease;

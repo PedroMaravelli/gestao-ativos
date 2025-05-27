@@ -1,11 +1,19 @@
 import logo from "../../assets/logo.png"
-import { HeaderContainer } from "./styles"
+import { Button, HeaderContainer } from "./styles"
+import { useNavigate } from "react-router-dom"
 
-export function Header(){
+export function Header({button, tipo}){
+    const navigate = useNavigate()
     
     return (
         <HeaderContainer>
-            <img srcSet={logo} alt="" srcset="" />
+            <div>
+                <img srcSet={logo} alt="" srcset="" />
+
+            </div>
+            
+
+            <Button display={button} onClick={() => navigate(`/${tipo}/cadastro`)}>Cadastrar ativo</Button>
 
         </HeaderContainer>
     )

@@ -42,3 +42,25 @@ export const CardAtivos = styled.div`
         font-size: 1.4rem;
     }
 `
+export const  ButtonCadastro = styled.button`
+    height: 30px;
+    width: 160px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #5C5C5C;
+    color: white;
+    border: none;
+     &:hover{
+        background-color:rgb(68, 68, 68);
+    }
+
+`
+export const HeadCard = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+
+   
+
+`
