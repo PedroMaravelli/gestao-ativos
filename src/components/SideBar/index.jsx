@@ -13,6 +13,10 @@ export function SideBar() {
             isOpen={isOpen}>
 
              {isOpen && <div>
+                    <a href="/">
+                    
+                    <strong>Inicio</strong>
+                </a >
                     <a href="/ativos/software">
                     
                     <strong>Software</strong>
@@ -24,6 +28,10 @@ export function SideBar() {
                 <a href="/ativos/hardware">
                     
                     <strong>Hardware</strong>
+                </a >
+                <a href="/bancodedados">
+                    
+                    <strong>Banco de dados</strong>
                 </a >
                 </div>}
             

@@ -6,6 +6,7 @@ import { CadastroSoftware } from "../screens/CadastroSoftware";
 import { CadastroHardware } from "../screens/CadastroHardware";
 import { CadastroRedes } from "../screens/CadastroRedes";
 import { AtivosLista } from "../screens/AtivosLista";
+import { BancoDeDadosInfo } from "../screens/BancoDeDadosInfo";
 
 export function Routers (){
     return(
@@ -20,6 +21,8 @@ export function Routers (){
             <Route path="/ativos/software" element={<AtivosLista tipo="software" />}></Route>
             <Route path="/ativos/hardware" element={<AtivosLista tipo="hardware" />}></Route>
             <Route path="/ativos/redes" element={<AtivosLista tipo="redes" />}></Route>
+            <Route path="/bancodedados/" element={<BancoDeDadosInfo/>}></Route>
+
 
 
 
